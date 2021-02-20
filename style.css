@@ -83,4 +83,241 @@ li a {
   font-size: 4em;
   text-transform: uppercase;
 }
+
+#vr {
+  margin: 9rem 0;
+}
+
+#vr .container {
+  position: relative;
+}
+
+#vr .container .vr-image {
+  width: 65%;
+  height: 450px;
+  background: url(./images/desktop/image-interactive.jpg) no-repeat top left/cover;
+}
+
+#vr .container .vr-content {
+  background: white;
+  position: absolute;
+  padding: 5rem 6rem 0 6rem;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+#vr .container .vr-content .vr-title {
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+#vr .container .vr-content .vr-text {
+  line-height: 1.5rem;
+  font-weight: bold;
+  color: #8c8c8c;
+}
+
+#creations {
+  margin-bottom: 6rem;
+}
+
+#creations .container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#creations .container .creations-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#creations .container .creations-title p {
+  color: black;
+  text-transform: uppercase;
+  font-size: 3.5em;
+}
+
+#creations .container .see-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#creations .container .see-all a {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  text-decoration: none;
+  font-family: 'Alata', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  color: black;
+  border: 1.5px solid black;
+  border-radius: 2px;
+  padding: 0.5rem 2.5rem;
+  text-align: center;
+}
+
+#creations .container .creations-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0;
+}
+
+#creations .container .creations-gallery > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ec7171;
+  height: 420px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+#creations .container .creations-gallery > div p {
+  color: white;
+  text-align: left;
+  font-size: 2em;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 2rem;
+}
+
+#creations .container .creations-gallery .deep-earth {
+  background: url(./images/desktop/image-deep-earth.jpg) no-repeat top left/cover;
+}
+
+#creations .container .creations-gallery .night-arcade {
+  background: url(./images/desktop/image-night-arcade.jpg) no-repeat top left/cover;
+}
+
+#creations .container .creations-gallery .soccer-vr {
+  background: url(./images/desktop/image-soccer-team.jpg) no-repeat top left/cover;
+}
+
+#creations .container .creations-gallery .the-grid {
+  background: url(./images/desktop/image-grid.jpg) no-repeat top left/cover;
+}
+
+#creations .container .creations-gallery .above-vr {
+  background: url(./images/desktop/image-from-above.jpg) no-repeat top left/cover;
+}
+
+#creations .container .creations-gallery .pocket-borealis {
+  background: url(./images/desktop/image-pocket-borealis.jpg) no-repeat top left/cover;
+}
+
+#creations .container .creations-gallery .the-curiosity {
+  background: url(./images/desktop/image-curiosity.jpg) no-repeat top left/cover;
+}
+
+#creations .container .creations-gallery .make-fisheye {
+  background: url(./images/desktop/image-fisheye.jpg) no-repeat top left/cover;
+}
+
+#footer {
+  background-color: black;
+  padding: 2rem 0;
+}
+
+#footer .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#footer .container .logo-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .container .logo-socials .logo {
+  margin: 1rem 0;
+}
+
+#footer .container .logo-socials .socials img {
+  margin-left: .7rem;
+}
+
+#footer .container .nav-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .container .nav-copyright .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .container .nav-copyright .nav .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .container .nav-copyright .nav .list li {
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .container .nav-copyright .nav .list li a {
+  padding: 1rem 2.5rem 0rem 0;
+}
+
+#footer .container .nav-copyright .copyright p {
+  color: #8c8c8c;
+  font-weight: bold;
+  font-size: 1rem;
+}
 /*# sourceMappingURL=style.css.map */

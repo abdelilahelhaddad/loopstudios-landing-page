@@ -43,6 +43,8 @@ li {
   background: url(./images/desktop/image-hero.jpg) no-repeat;
 
   .container {
+
+    //hero Section
     #header {
       width: 100%;
 
@@ -72,6 +74,203 @@ li {
           color: $White;
           font-size: 4em;
           text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+//Interactive VR Section
+#vr {
+  margin: 9rem 0;
+
+  .container {
+    position: relative;
+
+    .vr-image {
+      width: 65%;
+      height: 450px;
+      background: url(./images/desktop/image-interactive.jpg) no-repeat top left/cover;
+    }
+
+    .vr-content {
+      background: $White;
+      position: absolute;
+      padding: 5rem 6rem 0 6rem;
+      width: 50%;
+      bottom: 0;
+      right: 0;
+
+      .vr-title {
+        font-size: 3em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .vr-text {
+        line-height: 1.5rem;
+        font-weight: bold;
+        color: $Dark-Gray;
+      }
+    }
+  }
+}
+
+
+//our creations Section
+#creations {
+  margin-bottom: 6rem;
+
+  .container {
+    flex-wrap: wrap;
+
+    .creations-title {
+      display: flex;
+      flex-basis: 85%;
+      flex-direction: column;
+
+      p {
+        color: $Black;
+        text-transform: uppercase;
+        font-size: 3.5em;
+      }
+    }
+
+    .see-all {
+      display: flex;
+      flex-basis: 15%;
+      flex-direction: column;
+
+      a {
+        justify-self: right;
+        text-decoration: none;
+        font-family: 'Alata', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        color: $Black;
+        border: 1.5px solid $Black;
+        border-radius: 2px;
+        padding: 0.5rem 2.5rem;
+        text-align: center;
+      }
+    }
+
+    .creations-gallery {
+      display: flex;
+      flex-basis: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 2rem 0;
+
+      &>div {
+        display: flex;
+        flex-basis: 23%;
+        flex-direction: column;
+        background: rgb(236, 113, 113);
+        height: 420px;
+        margin-top: 2rem;
+        position: relative;
+
+        p {
+          color: $White;
+          text-align: left;
+          font-size: 2em;
+          line-height: 1.8rem;
+          text-transform: uppercase;
+          font-family: 'Josefin Sans', sans-serif;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          padding: 2rem;
+        }
+      }
+
+      .deep-earth {
+        background: url(./images/desktop/image-deep-earth.jpg) no-repeat top left/cover;
+      }
+
+      .night-arcade {
+        background: url(./images/desktop/image-night-arcade.jpg) no-repeat top left/cover;
+      }
+
+      .soccer-vr {
+        background: url(./images/desktop/image-soccer-team.jpg) no-repeat top left/cover;
+      }
+
+      .the-grid {
+        background: url(./images/desktop/image-grid.jpg) no-repeat top left/cover;
+      }
+
+      .above-vr {
+        background: url(./images/desktop/image-from-above.jpg) no-repeat top left/cover;
+      }
+
+      .pocket-borealis {
+        background: url(./images/desktop/image-pocket-borealis.jpg) no-repeat top left/cover;
+      }
+
+      .the-curiosity {
+        background: url(./images/desktop/image-curiosity.jpg) no-repeat top left/cover;
+      }
+
+      .make-fisheye {
+        background: url(./images/desktop/image-fisheye.jpg) no-repeat top left/cover;
+      }
+    }
+  }
+}
+
+//Footer
+#footer {
+  background-color: $Black;
+  padding: 2rem 0;
+
+  .container {
+    flex-direction: column;
+
+    .logo-socials {
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        margin: 1rem 0;
+      }
+
+      .socials {
+        img {
+          margin-left: .7rem;
+        }
+      }
+    }
+
+    .nav-copyright {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav {
+        display: flex;
+
+        .list {
+          display: flex;
+
+          li {
+            margin: 0;
+            justify-content: space-between;
+
+            a {
+              padding: 1rem 2.5rem 0rem 0;
+            }
+          }
+        }
+      }
+
+      .copyright {
+        p {
+          color: $Dark-Gray;
+          font-weight: bold;
+          font-size: 1rem;
         }
       }
     }
