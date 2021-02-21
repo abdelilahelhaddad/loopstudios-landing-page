@@ -43,7 +43,7 @@ li a {
 
 #main {
   height: 100vh;
-  background: url(./images/desktop/image-hero.jpg) no-repeat;
+  background: url(./images/mobile/image-hero.jpg) no-repeat;
 }
 
 #main .container #header {
@@ -111,7 +111,7 @@ li a {
 #vr .container .vr-image {
   width: 65%;
   height: 450px;
-  background: url(./images/desktop/image-interactive.jpg) no-repeat top left/cover;
+  background: url(./images/mobile/image-interactive.jpg) no-repeat top left/cover;
 }
 
 #vr .container .vr-content {
@@ -221,7 +221,6 @@ li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #ec7171;
   height: 420px;
   margin-top: 2rem;
   position: relative;
@@ -241,35 +240,35 @@ li a {
 }
 
 #creations .container .creations-gallery .deep-earth {
-  background: url(./images/desktop/image-deep-earth.jpg) no-repeat top left/cover;
+  background: url(./images/mobile/image-deep-earth.jpg) no-repeat top left/cover;
 }
 
 #creations .container .creations-gallery .night-arcade {
-  background: url(./images/desktop/image-night-arcade.jpg) no-repeat top left/cover;
+  background: url(./images/mobile/image-night-arcade.jpg) no-repeat top left/cover;
 }
 
 #creations .container .creations-gallery .soccer-vr {
-  background: url(./images/desktop/image-soccer-team.jpg) no-repeat top left/cover;
+  background: url(./images/mobile/image-soccer-team.jpg) no-repeat top left/cover;
 }
 
 #creations .container .creations-gallery .the-grid {
-  background: url(./images/desktop/image-grid.jpg) no-repeat top left/cover;
+  background: url(./images/mobile/image-grid.jpg) no-repeat top left/cover;
 }
 
 #creations .container .creations-gallery .above-vr {
-  background: url(./images/desktop/image-from-above.jpg) no-repeat top left/cover;
+  background: url(./images/mobile/image-from-above.jpg) no-repeat top left/cover;
 }
 
 #creations .container .creations-gallery .pocket-borealis {
-  background: url(./images/desktop/image-pocket-borealis.jpg) no-repeat top left/cover;
+  background: url(./images/mobile/image-pocket-borealis.jpg) no-repeat top left/cover;
 }
 
 #creations .container .creations-gallery .the-curiosity {
-  background: url(./images/desktop/image-curiosity.jpg) no-repeat top left/cover;
+  background: url(./images/mobile/image-curiosity.jpg) no-repeat top left/cover;
 }
 
 #creations .container .creations-gallery .make-fisheye {
-  background: url(./images/desktop/image-fisheye.jpg) no-repeat top left/cover;
+  background: url(./images/mobile/image-fisheye.jpg) no-repeat top left/cover;
 }
 
 #footer {
@@ -379,5 +378,218 @@ li a {
   color: #8c8c8c;
   font-weight: bold;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 0.5rem;
+    max-width: 375px;
+  }
+  #main {
+    background: url(./images/mobile/image-hero.jpg) no-repeat;
+  }
+  #main .container #header #navbar .burger {
+    padding: 1rem;
+  }
+  #main .container #header #navbar .burger .open {
+    display: block;
+  }
+  #main .container #header #navbar .burger .close {
+    display: none;
+  }
+  #main .container #header #navbar .list {
+    display: none;
+  }
+  #main .container #header .header-content {
+    max-width: 320px;
+    margin: 10rem auto 0 auto;
+    padding: .8rem;
+  }
+  #main .container #header .header-content p {
+    font-size: 2.8em;
+  }
+  #vr .container {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #vr .container .vr-image {
+    width: 100%;
+    height: 250px;
+    background: url(./images/mobile/image-interactive.jpg) no-repeat;
+    background-size: cover;
+  }
+  #vr .container .vr-content {
+    position: static;
+    padding: 5rem 1rem 0 1rem;
+    width: 100%;
+  }
+  #vr .container .vr-content .vr-title {
+    text-align: center;
+    font-size: 2em;
+  }
+  #vr .container .vr-content .vr-text {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  #creations .container .creations-title {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 auto;
+  }
+  #creations .container .creations-title p {
+    font-size: 2em;
+    text-align: center;
+  }
+  #creations .container .see-all {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 auto;
+  }
+  #creations .container .creations-gallery {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #creations .container .creations-gallery > div {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 150px;
+  }
+  #creations .container .creations-gallery > div p {
+    padding: 1rem;
+  }
+  #creations .container .creations-gallery .deep-earth {
+    background: url(./images/mobile/image-deep-earth.jpg) no-repeat top left/cover;
+  }
+  #creations .container .creations-gallery .night-arcade {
+    background: url(./images/mobile/image-night-arcade.jpg) no-repeat top left/cover;
+  }
+  #creations .container .creations-gallery .soccer-vr {
+    background: url(./images/mobile/image-soccer-team.jpg) no-repeat top left/cover;
+  }
+  #creations .container .creations-gallery .the-grid {
+    background: url(./images/mobile/image-grid.jpg) no-repeat top left/cover;
+  }
+  #creations .container .creations-gallery .above-vr {
+    background: url(./images/mobile/image-from-above.jpg) no-repeat top left/cover;
+  }
+  #creations .container .creations-gallery .pocket-borealis {
+    background: url(./images/mobile/image-pocket-borealis.jpg) no-repeat top left/cover;
+  }
+  #creations .container .creations-gallery .the-curiosity {
+    background: url(./images/mobile/image-curiosity.jpg) no-repeat top left/cover;
+  }
+  #creations .container .creations-gallery .make-fisheye {
+    background: url(./images/mobile/image-fisheye.jpg) no-repeat top left/cover;
+  }
+  #footer {
+    background-color: black;
+    padding: 2rem 0;
+  }
+  #footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .container .logo-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #footer .container .logo-socials .logo {
+    margin: 1rem 0;
+  }
+  #footer .container .logo-socials .socials a {
+    position: relative;
+    padding-bottom: 5px;
+  }
+  #footer .container .logo-socials .socials a img {
+    margin-left: .7rem;
+  }
+  #footer .container .logo-socials .socials a:hover:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 100%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    height: 3px;
+    width: 24px;
+    background: white;
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
+  }
+  #footer .container .nav-copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .container .nav-copyright .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #footer .container .nav-copyright .nav .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .container .nav-copyright .nav .list li {
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #footer .container .nav-copyright .nav .list li a {
+    padding: 1rem 0rem 0rem 0;
+  }
+  #footer .container .nav-copyright .nav .list li a:hover {
+    padding-bottom: 10px;
+  }
+  #footer .container .nav-copyright .nav .list li a:hover:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 20%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+    height: 3px;
+    width: 35%;
+    background: white;
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
+  }
+  #footer .container .nav-copyright .copyright p {
+    color: #8c8c8c;
+    font-weight: bold;
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -41,7 +41,7 @@ li {
 
 #main {
   height: 100vh;
-  background: url(./images/desktop/image-hero.jpg) no-repeat;
+  background: url(./images/mobile/image-hero.jpg) no-repeat;
 
   .container {
 
@@ -109,7 +109,7 @@ li {
     .vr-image {
       width: 65%;
       height: 450px;
-      background: url(./images/desktop/image-interactive.jpg) no-repeat top left/cover;
+      background: url(./images/mobile/image-interactive.jpg) no-repeat top left/cover;
     }
 
     .vr-content {
@@ -191,7 +191,6 @@ li {
         display: flex;
         flex-basis: 23%;
         flex-direction: column;
-        background: rgb(236, 113, 113);
         height: 420px;
         margin-top: 2rem;
         position: relative;
@@ -211,35 +210,35 @@ li {
       }
 
       .deep-earth {
-        background: url(./images/desktop/image-deep-earth.jpg) no-repeat top left/cover;
+        background: url(./images/mobile/image-deep-earth.jpg) no-repeat top left/cover;
       }
 
       .night-arcade {
-        background: url(./images/desktop/image-night-arcade.jpg) no-repeat top left/cover;
+        background: url(./images/mobile/image-night-arcade.jpg) no-repeat top left/cover;
       }
 
       .soccer-vr {
-        background: url(./images/desktop/image-soccer-team.jpg) no-repeat top left/cover;
+        background: url(./images/mobile/image-soccer-team.jpg) no-repeat top left/cover;
       }
 
       .the-grid {
-        background: url(./images/desktop/image-grid.jpg) no-repeat top left/cover;
+        background: url(./images/mobile/image-grid.jpg) no-repeat top left/cover;
       }
 
       .above-vr {
-        background: url(./images/desktop/image-from-above.jpg) no-repeat top left/cover;
+        background: url(./images/mobile/image-from-above.jpg) no-repeat top left/cover;
       }
 
       .pocket-borealis {
-        background: url(./images/desktop/image-pocket-borealis.jpg) no-repeat top left/cover;
+        background: url(./images/mobile/image-pocket-borealis.jpg) no-repeat top left/cover;
       }
 
       .the-curiosity {
-        background: url(./images/desktop/image-curiosity.jpg) no-repeat top left/cover;
+        background: url(./images/mobile/image-curiosity.jpg) no-repeat top left/cover;
       }
 
       .make-fisheye {
-        background: url(./images/desktop/image-fisheye.jpg) no-repeat top left/cover;
+        background: url(./images/mobile/image-fisheye.jpg) no-repeat top left/cover;
       }
     }
   }
@@ -338,4 +337,243 @@ li {
   }
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:375px) {
+  .container {
+    padding: 0 0.5rem;
+    max-width: 375px;
+  }
+
+  #main {
+    background: url(./images/mobile/image-hero.jpg) no-repeat;
+
+    .container {
+
+      //hero Section
+      #header {
+        #navbar {
+          .burger {
+            padding: 1rem;
+
+            .open {
+              display: block;
+            }
+
+            .close {
+              display: none;
+            }
+          }
+
+          .list {
+            display: none;
+          }
+        }
+
+        .header-content {
+          max-width: 320px;
+          margin: 10rem auto 0 auto;
+          padding: .8rem;
+
+          p {
+            font-size: 2.8em;
+          }
+        }
+      }
+    }
+  }
+
+  //Interactive VR Section
+  #vr {
+
+    .container {
+      position: static;
+      flex-direction: column;
+
+      .vr-image {
+        width: 100%;
+        height: 250px;
+        background: url(./images/mobile/image-interactive.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      .vr-content {
+        position: static;
+        padding: 5rem 1rem 0 1rem;
+        width: 100%;
+
+        .vr-title {
+          text-align: center;
+          font-size: 2em;
+        }
+
+        .vr-text {
+          font-size: 1.2em;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+
+  //our creations Section
+  #creations {
+    .container {
+      .creations-title {
+        order: 1;
+        margin: 0 auto;
+
+        p {
+          font-size: 2em;
+          text-align: center;
+        }
+      }
+
+      .see-all {
+        flex-basis: 50%;
+        order: 3;
+        margin: 0 auto;
+      }
+
+      .creations-gallery {
+        order: 2;
+
+        &>div {
+          flex-basis: 100%;
+          height: 150px;
+
+          p {
+            padding: 1rem;
+          }
+        }
+
+        .deep-earth {
+          background: url(./images/mobile/image-deep-earth.jpg) no-repeat top left/cover;
+        }
+
+        .night-arcade {
+          background: url(./images/mobile/image-night-arcade.jpg) no-repeat top left/cover;
+        }
+
+        .soccer-vr {
+          background: url(./images/mobile/image-soccer-team.jpg) no-repeat top left/cover;
+        }
+
+        .the-grid {
+          background: url(./images/mobile/image-grid.jpg) no-repeat top left/cover;
+        }
+
+        .above-vr {
+          background: url(./images/mobile/image-from-above.jpg) no-repeat top left/cover;
+        }
+
+        .pocket-borealis {
+          background: url(./images/mobile/image-pocket-borealis.jpg) no-repeat top left/cover;
+        }
+
+        .the-curiosity {
+          background: url(./images/mobile/image-curiosity.jpg) no-repeat top left/cover;
+        }
+
+        .make-fisheye {
+          background: url(./images/mobile/image-fisheye.jpg) no-repeat top left/cover;
+        }
+      }
+    }
+  }
+
+  //Footer
+  #footer {
+    background-color: $Black;
+    padding: 2rem 0;
+
+    .container {
+      flex-direction: column;
+
+      .logo-socials {
+        display: flex;
+        justify-content: center;
+
+        .logo {
+          margin: 1rem 0;
+        }
+
+        .socials {
+
+          a {
+            position: relative;
+            padding-bottom: 5px;
+
+            img {
+              margin-left: .7rem;
+            }
+
+            &:hover:after {
+              content: "";
+              position: absolute;
+              display: block;
+              bottom: 0;
+              left: 100%;
+              transform: translateX(-100%);
+              height: 3px;
+              width: 24px;
+              background: $White;
+              transition: .5s ease all;
+            }
+
+          }
+        }
+      }
+
+      .nav-copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        .nav {
+          display: flex;
+
+          .list {
+            display: flex;
+            flex-direction: column;
+
+            li {
+              margin: 0;
+              justify-content: space-between;
+
+              a {
+                padding: 1rem 0rem 0rem 0;
+
+                &:hover {
+                  padding-bottom: 10px;
+                }
+
+                &:hover:after {
+                  content: " ";
+                  position: absolute;
+                  display: block;
+                  bottom: 0;
+                  left: 20%;
+                  transform: translateX(-20%);
+                  height: 3px;
+                  width: 35%;
+                  background: $White;
+                  transition: .5s ease all;
+
+                }
+              }
+            }
+          }
+        }
+
+        .copyright {
+          p {
+            color: $Dark-Gray;
+            font-weight: bold;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+}
