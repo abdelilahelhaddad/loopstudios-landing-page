@@ -38,6 +38,7 @@ li a {
   font-family: 'Alata', sans-serif;
   color: white;
   padding: 1rem;
+  position: relative;
 }
 
 #main {
@@ -67,6 +68,21 @@ li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#main .container #header #navbar .list li a:hover:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 3px;
+  width: 40%;
+  background: white;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
 }
 
 #main .container #header .header-content {
@@ -170,6 +186,11 @@ li a {
   border-radius: 2px;
   padding: 0.5rem 2.5rem;
   text-align: center;
+}
+
+#creations .container .see-all a:hover {
+  color: white;
+  background-color: black;
 }
 
 #creations .container .creations-gallery {
@@ -276,8 +297,28 @@ li a {
   margin: 1rem 0;
 }
 
-#footer .container .logo-socials .socials img {
+#footer .container .logo-socials .socials a {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+#footer .container .logo-socials .socials a img {
   margin-left: .7rem;
+}
+
+#footer .container .logo-socials .socials a:hover:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  height: 3px;
+  width: 24px;
+  background: white;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
 }
 
 #footer .container .nav-copyright {
@@ -313,6 +354,25 @@ li a {
 
 #footer .container .nav-copyright .nav .list li a {
   padding: 1rem 2.5rem 0rem 0;
+}
+
+#footer .container .nav-copyright .nav .list li a:hover {
+  padding-bottom: 10px;
+}
+
+#footer .container .nav-copyright .nav .list li a:hover:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 20%;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+  height: 3px;
+  width: 35%;
+  background: white;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
 }
 
 #footer .container .nav-copyright .copyright p {
