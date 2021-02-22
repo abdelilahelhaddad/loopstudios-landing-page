@@ -43,7 +43,7 @@ li a {
 
 #main {
   height: 100vh;
-  background: url(./images/mobile/image-hero.jpg) no-repeat;
+  background: url(./images/desktop/image-hero.jpg) no-repeat;
 }
 
 #main .container #header {
@@ -111,7 +111,7 @@ li a {
 #vr .container .vr-image {
   width: 65%;
   height: 450px;
-  background: url(./images/mobile/image-interactive.jpg) no-repeat top left/cover;
+  background: url(./images/desktop/image-interactive.jpg) no-repeat top left/cover;
 }
 
 #vr .container .vr-content {
@@ -224,6 +224,7 @@ li a {
   height: 420px;
   margin-top: 2rem;
   position: relative;
+  cursor: pointer;
 }
 
 #creations .container .creations-gallery > div p {
@@ -239,36 +240,118 @@ li a {
   padding: 2rem;
 }
 
-#creations .container .creations-gallery .deep-earth {
-  background: url(./images/mobile/image-deep-earth.jpg) no-repeat top left/cover;
+#creations .container .creations-gallery > div:hover p {
+  color: black !important;
 }
 
-#creations .container .creations-gallery .night-arcade {
-  background: url(./images/mobile/image-night-arcade.jpg) no-repeat top left/cover;
-}
-
-#creations .container .creations-gallery .soccer-vr {
-  background: url(./images/mobile/image-soccer-team.jpg) no-repeat top left/cover;
-}
-
-#creations .container .creations-gallery .the-grid {
-  background: url(./images/mobile/image-grid.jpg) no-repeat top left/cover;
-}
-
-#creations .container .creations-gallery .above-vr {
-  background: url(./images/mobile/image-from-above.jpg) no-repeat top left/cover;
-}
-
-#creations .container .creations-gallery .pocket-borealis {
-  background: url(./images/mobile/image-pocket-borealis.jpg) no-repeat top left/cover;
-}
-
-#creations .container .creations-gallery .the-curiosity {
-  background: url(./images/mobile/image-curiosity.jpg) no-repeat top left/cover;
-}
-
+#creations .container .creations-gallery .deep-earth,
+#creations .container .creations-gallery .night-arcade,
+#creations .container .creations-gallery .soccer-vr,
+#creations .container .creations-gallery .the-grid,
+#creations .container .creations-gallery .above-vr,
+#creations .container .creations-gallery .pocket-borealis,
+#creations .container .creations-gallery .the-curiosity,
 #creations .container .creations-gallery .make-fisheye {
-  background: url(./images/mobile/image-fisheye.jpg) no-repeat top left/cover;
+  position: relative;
+}
+
+#creations .container .creations-gallery .deep-earth:hover::after,
+#creations .container .creations-gallery .night-arcade:hover::after,
+#creations .container .creations-gallery .soccer-vr:hover::after,
+#creations .container .creations-gallery .the-grid:hover::after,
+#creations .container .creations-gallery .above-vr:hover::after,
+#creations .container .creations-gallery .pocket-borealis:hover::after,
+#creations .container .creations-gallery .the-curiosity:hover::after,
+#creations .container .creations-gallery .make-fisheye:hover::after {
+  opacity: 0.5;
+}
+
+#creations .container .creations-gallery .deep-earth::after {
+  background: url(./images/desktop/image-deep-earth.jpg) no-repeat top left/cover;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#creations .container .creations-gallery .night-arcade::after {
+  background: url(./images/desktop/image-night-arcade.jpg) no-repeat top left/cover;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#creations .container .creations-gallery .soccer-vr::after {
+  background: url(./images/desktop/image-soccer-team.jpg) no-repeat top left/cover;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#creations .container .creations-gallery .the-grid::after {
+  background: url(./images/desktop/image-grid.jpg) no-repeat top left/cover;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#creations .container .creations-gallery .above-vr::after {
+  background: url(./images/desktop/image-from-above.jpg) no-repeat top left/cover;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#creations .container .creations-gallery .pocket-borealis::after {
+  background: url(./images/desktop/image-pocket-borealis.jpg) no-repeat top left/cover;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#creations .container .creations-gallery .the-curiosity::after {
+  background: url(./images/desktop/image-curiosity.jpg) no-repeat top left/cover;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#creations .container .creations-gallery .make-fisheye::after {
+  background: url(./images/desktop/image-fisheye.jpg) no-repeat top left/cover;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 #footer {
@@ -290,10 +373,6 @@ li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-#footer .container .logo-socials .logo {
-  margin: 1rem 0;
 }
 
 #footer .container .logo-socials .socials a {
@@ -378,6 +457,7 @@ li a {
   color: #8c8c8c;
   font-weight: bold;
   font-size: 1rem;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 375px) {

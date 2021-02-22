@@ -41,7 +41,7 @@ li {
 
 #main {
   height: 100vh;
-  background: url(./images/mobile/image-hero.jpg) no-repeat;
+  background: url(./images/desktop/image-hero.jpg) no-repeat;
 
   .container {
 
@@ -109,7 +109,7 @@ li {
     .vr-image {
       width: 65%;
       height: 450px;
-      background: url(./images/mobile/image-interactive.jpg) no-repeat top left/cover;
+      background: url(./images/desktop/image-interactive.jpg) no-repeat top left/cover;
     }
 
     .vr-content {
@@ -194,6 +194,7 @@ li {
         height: 420px;
         margin-top: 2rem;
         position: relative;
+        cursor: pointer;
 
         p {
           color: $White;
@@ -207,38 +208,122 @@ li {
           bottom: 0;
           padding: 2rem;
         }
+
+        &:hover {
+          p {
+            color: $Black !important;
+          }
+        }
       }
 
-      .deep-earth {
-        background: url(./images/mobile/image-deep-earth.jpg) no-repeat top left/cover;
-      }
-
-      .night-arcade {
-        background: url(./images/mobile/image-night-arcade.jpg) no-repeat top left/cover;
-      }
-
-      .soccer-vr {
-        background: url(./images/mobile/image-soccer-team.jpg) no-repeat top left/cover;
-      }
-
-      .the-grid {
-        background: url(./images/mobile/image-grid.jpg) no-repeat top left/cover;
-      }
-
-      .above-vr {
-        background: url(./images/mobile/image-from-above.jpg) no-repeat top left/cover;
-      }
-
-      .pocket-borealis {
-        background: url(./images/mobile/image-pocket-borealis.jpg) no-repeat top left/cover;
-      }
-
-      .the-curiosity {
-        background: url(./images/mobile/image-curiosity.jpg) no-repeat top left/cover;
-      }
-
+      .deep-earth,
+      .night-arcade,
+      .soccer-vr,
+      .the-grid,
+      .above-vr,
+      .pocket-borealis,
+      .the-curiosity,
       .make-fisheye {
-        background: url(./images/mobile/image-fisheye.jpg) no-repeat top left/cover;
+        position: relative;
+      }
+
+      .deep-earth:hover::after,
+      .night-arcade:hover::after,
+      .soccer-vr:hover::after,
+      .the-grid:hover::after,
+      .above-vr:hover::after,
+      .pocket-borealis:hover::after,
+      .the-curiosity:hover::after,
+      .make-fisheye:hover::after {
+        opacity: 0.5;
+      }
+
+      .deep-earth::after {
+        background: url(./images/desktop/image-deep-earth.jpg) no-repeat top left/cover;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .night-arcade::after {
+        background: url(./images/desktop/image-night-arcade.jpg) no-repeat top left/cover;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .soccer-vr::after {
+        background: url(./images/desktop/image-soccer-team.jpg) no-repeat top left/cover;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .the-grid::after {
+        background: url(./images/desktop/image-grid.jpg) no-repeat top left/cover;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .above-vr::after {
+        background: url(./images/desktop/image-from-above.jpg) no-repeat top left/cover;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .pocket-borealis::after {
+        background: url(./images/desktop/image-pocket-borealis.jpg) no-repeat top left/cover;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .the-curiosity::after {
+        background: url(./images/desktop/image-curiosity.jpg) no-repeat top left/cover;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .make-fisheye::after {
+        background: url(./images/desktop/image-fisheye.jpg) no-repeat top left/cover;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
       }
     }
   }
@@ -255,10 +340,6 @@ li {
     .logo-socials {
       display: flex;
       justify-content: space-between;
-
-      .logo {
-        margin: 1rem 0;
-      }
 
       .socials {
         a {
@@ -331,6 +412,7 @@ li {
           color: $Dark-Gray;
           font-weight: bold;
           font-size: 1rem;
+          margin-top: 1rem;
         }
       }
     }
