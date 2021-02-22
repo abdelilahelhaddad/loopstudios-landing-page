@@ -482,90 +482,36 @@ li {
 
   //Footer
   #footer {
-    background-color: $Black;
-    padding: 2rem 0;
 
     .container {
-      flex-direction: column;
 
       .logo-socials {
-        display: flex;
         justify-content: center;
-
-        .logo {
-          margin: 1rem 0;
-        }
-
-        .socials {
-
-          a {
-            position: relative;
-            padding-bottom: 5px;
-
-            img {
-              margin-left: .7rem;
-            }
-
-            &:hover:after {
-              content: "";
-              position: absolute;
-              display: block;
-              bottom: 0;
-              left: 100%;
-              transform: translateX(-100%);
-              height: 3px;
-              width: 24px;
-              background: $White;
-              transition: .5s ease all;
-            }
-
-          }
-        }
+        flex-direction: column;
+        margin: 0 auto;
       }
 
       .nav-copyright {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
         flex-direction: column;
 
         .nav {
-          display: flex;
-
           .list {
-            display: flex;
             flex-direction: column;
 
             li {
-              margin: 0;
-              justify-content: space-between;
 
               a {
-                padding: 1rem 0rem 0rem 0;
-
-                &:hover {
-                  padding-bottom: 10px;
-                }
-
-                &:hover:after {
-                  content: " ";
-                  position: absolute;
-                  display: block;
-                  bottom: 0;
-                  left: 20%;
-                  transform: translateX(-20%);
-                  height: 3px;
-                  width: 35%;
-                  background: $White;
-                  transition: .5s ease all;
-
-                }
+                padding: 1rem 0 0 0;
+                text-align: center;
               }
             }
           }
         }
 
         .copyright {
+          margin-top: 1rem;
+
           p {
             color: $Dark-Gray;
             font-weight: bold;
