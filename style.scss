@@ -58,6 +58,10 @@ li {
           padding: 1rem;
         }
 
+        .burger {
+          display: none;
+        }
+
         .list {
           display: flex;
 
@@ -433,20 +437,65 @@ li {
       //hero Section
       #header {
         #navbar {
+          position: relative;
+
           .burger {
             padding: 1rem;
+            display: block;
 
             .open {
               display: block;
             }
 
+            //For the burger toggle
+            .open.active {
+              display: none;
+            }
+
             .close {
               display: none;
+            }
+
+            //For the burger toggle
+            .close.active {
+              display: block;
             }
           }
 
           .list {
             display: none;
+          }
+
+          .list.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 12rem;
+            z-index: 9;
+
+            li {
+              a {
+                text-align: left;
+                font-size: 2em;
+                text-transform: uppercase;
+                font-family: 'Josefin Sans', sans-serif;
+
+                &:hover:after {
+                  content: " ";
+                  position: absolute;
+                  display: block;
+                  bottom: 10%;
+                  left: 20%;
+                  transform: translateX(-20%);
+                  height: 3px;
+                  width: 75%;
+                  background: $White;
+                  transition: .5s ease all;
+                }
+              }
+            }
           }
         }
 
@@ -459,8 +508,22 @@ li {
             font-size: 2.8em;
           }
         }
+
+        .header-content.active {
+          display: none;
+        }
       }
     }
+  }
+
+  #main.active {
+    background: $Black;
+    height: 100vh;
+    width: 100%;
+  }
+
+  body.active {
+    position: fixed;
   }
 
   //Interactive VR Section
@@ -571,6 +634,10 @@ li {
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
+
+        .socials {
+          margin-top: 1rem;
+        }
       }
 
       .nav-copyright {

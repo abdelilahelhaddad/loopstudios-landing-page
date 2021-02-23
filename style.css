@@ -64,6 +64,10 @@ li a {
   padding: 1rem;
 }
 
+#main .container #header #navbar .burger {
+  display: none;
+}
+
 #main .container #header #navbar .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,17 +472,61 @@ li a {
   #main {
     background: url(./images/mobile/image-hero.jpg) no-repeat;
   }
+  #main .container #header #navbar {
+    position: relative;
+  }
   #main .container #header #navbar .burger {
     padding: 1rem;
+    display: block;
   }
   #main .container #header #navbar .burger .open {
     display: block;
   }
+  #main .container #header #navbar .burger .open.active {
+    display: none;
+  }
   #main .container #header #navbar .burger .close {
     display: none;
   }
+  #main .container #header #navbar .burger .close.active {
+    display: block;
+  }
   #main .container #header #navbar .list {
     display: none;
+  }
+  #main .container #header #navbar .list.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 12rem;
+    z-index: 9;
+  }
+  #main .container #header #navbar .list.active li a {
+    text-align: left;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #main .container #header #navbar .list.active li a:hover:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    bottom: 10%;
+    left: 20%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+    height: 3px;
+    width: 75%;
+    background: white;
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
   }
   #main .container #header .header-content {
     max-width: 320px;
@@ -487,6 +535,17 @@ li a {
   }
   #main .container #header .header-content p {
     font-size: 2.8em;
+  }
+  #main .container #header .header-content.active {
+    display: none;
+  }
+  #main.active {
+    background: black;
+    height: 100vh;
+    width: 100%;
+  }
+  body.active {
+    position: fixed;
   }
   #vr .container {
     position: static;
@@ -578,6 +637,9 @@ li a {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
+  }
+  #footer .container .logo-socials .socials {
+    margin-top: 1rem;
   }
   #footer .container .nav-copyright {
     -webkit-box-pack: center;
